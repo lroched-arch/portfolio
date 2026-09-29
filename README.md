@@ -1,71 +1,63 @@
-# Portfolio — Lídia Roche
+# 👩‍💻 Portfolio — Lídia Roche
 
-Portfolio personal de Lídia Roche, estudiante de 2º curso del CFGS de
-Desarrollo de Aplicaciones Web (Institut Joaquim Mir, Vilanova i la Geltrú).
+¡Hola! Soy **Lídia Roche**, estudiante de **Desarrollo de Aplicaciones Web (DAW)**.
 
-Sitio estático de una sola página (`index.html`) con las secciones:
-Sobre mí, Competencias y habilidades, Proyectos y Contacto. Incluye
-selector de tema claro/oscuro y animaciones de aparición al hacer scroll.
+Este repositorio contiene mi **portfolio personal**, donde muestro algunos de los proyectos que he desarrollado durante mi formación y mi aprendizaje en programación y desarrollo web.
 
-## Estructura del proyecto
+## 🚀 Sobre mí
 
-```
-portfolio/
-├── index.html              # Página única con todas las secciones
-├── README.md
-├── .gitignore
-│
-├── css/
-│   ├── base.css             # Variables (paleta, tipografía), reset, estilos globales
-│   ├── layout.css           # Rejilla, contenedores, header/nav, footer, responsive
-│   ├── components.css       # Botones, tarjetas, chips de habilidades, panel de código
-│   ├── sections.css         # Estilos específicos: hero, sobre mí...
-│   └── animations.css       # Reveal on scroll, keyframes, micro-interacciones
-│
-├── js/
-│   ├── main.js               # Punto de entrada
-│   ├── nav.js                # Selector de tema + enlace activo del menú
-│   └── reveal.js              # Animaciones de aparición (IntersectionObserver)
-│
-└── assets/
-    ├── img/
-    │   ├── foto-lidia.jpg     # Foto de perfil
-    │   ├── og-image.jpg       # (pendiente) imagen de vista previa al compartir el enlace
-    │   └── projects/          # Capturas de cada proyecto
-    ├── icons/
-    │   └── favicon.svg
-    └── docs/
-        └── LidiaRoche_CV.pdf  # (pendiente) CV descargable
-```
+Actualmente estoy estudiando **DAW** y formándome en diferentes tecnologías relacionadas con el desarrollo de aplicaciones web.
 
-## Cómo verlo en local
+Me interesa seguir aprendiendo, mejorar mis habilidades técnicas y adquirir experiencia profesional en el sector IT.
 
-No hace falta ningún proceso de compilación. Basta con abrir
-`index.html` en el navegador, o servirlo con un servidor local:
+Mi objetivo es encontrar una oportunidad de **prácticas o un puesto junior IT** donde pueda seguir creciendo y aplicar los conocimientos adquiridos durante mi formación.
 
-```bash
-# con Python
-python3 -m http.server 8000
+## 🛠️ Tecnologías
 
-# o con la extensión "Live Server" de VS Code
-```
+Durante mi formación he trabajado con:
 
-## Cómo publicarlo (GitHub Pages)
+* HTML
+* CSS
+* JavaScript
+* Python
+* SQL / MySQL
+* XML
+* JSON
+* Git
+* GitHub
+* APIs REST
+* Streamlit
 
-1. Sube esta carpeta completa a un repositorio de GitHub (por ejemplo
-   `lroched-arch/portfolio`).
-2. En el repositorio: **Settings → Pages → Source** → selecciona la
-   rama `main` y la carpeta `/ (root)`.
-3. GitHub Pages sirve automáticamente el `index.html` de la raíz. La
-   URL pública queda como `https://lroched-arch.github.io/portfolio/`.
+## 📂 Proyectos
 
-Al estar todo enlazado con rutas relativas (`css/...`, `js/...`,
-`assets/...`), la separación en carpetas no afecta a que la página
-funcione igual que si estuviera en un único archivo.
+### 🔐 VirusTotal API
 
-## Pendiente
+Aplicación desarrollada con **Python, Streamlit y una API REST** que permite comprobar **URLs e IPs**.
 
-- [ ] Sustituir las 3 tarjetas de proyecto de ejemplo por proyectos reales
-- [ ] Añadir capturas en `assets/img/projects/`
-- [ ] Añadir `assets/img/og-image.jpg` para la vista previa al compartir
-- [ ] Añadir `assets/docs/LidiaRoche_CV.pdf` si se quiere botón de descarga de CV
+La aplicación muestra:
+
+* Porcentaje de detecciones maliciosas.
+* Si la URL o IP está infectada o no.
+* Los resultados mediante diferentes colores para facilitar su interpretación.
+
+> Proyecto desarrollado como parte de mi formación en DAW.
+
+### 🌐 Web personal
+
+Landing page desarrollada utilizando **HTML y CSS**, diseñada como una presentación personal y profesional.
+
+El proyecto está enfocado en practicar la estructura de una página web, la organización del contenido y el diseño mediante CSS.
+
+## 📚 Formación
+
+**Desarrollo de Aplicaciones Web (DAW)**
+Actualmente en formación — Finalización prevista: **junio de 2027**
+
+## 🔗 Contacto y perfiles
+
+* 💻 GitHub: [github.com/lidiarochedw](https://github.com/lidiarochedw)
+* 🌐 Portfolio: próximamente
+
+---
+
+⭐ Este portfolio se irá actualizando a medida que avance en mi formación y desarrolle nuevos proyectos.
