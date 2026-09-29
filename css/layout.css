@@ -1,0 +1,61 @@
+/* layout.css — rejilla, contenedores, header/nav, secciones, footer, responsive */
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem;
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 6px 24px var(--shadow);
+}
+.navbar-brand { display: flex; align-items: center; gap: 0.7rem; }
+.navbar-brand span { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.95rem; }
+.navbar-links {
+  display: flex; align-items: center; gap: 1.6rem;
+  font-size: 0.9rem; color: var(--ink-soft);
+  overflow-x: auto; white-space: nowrap;
+}
+.navbar-links a { color: inherit; }
+.navbar-links a:hover, .navbar-links a.active { color: var(--ink); text-decoration: none; }
+.navbar-right { display: flex; align-items: center; gap: 0.9rem; }
+
+/* Fixed background shading */
+.bg-decor { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.bg-decor span { position: absolute; border-radius: 50%; filter: blur(90px); }
+.bg-decor .b1 {
+  top: -18%; right: -14%; width: 520px; height: 520px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 22%, transparent) 0%, transparent 72%);
+}
+.bg-decor .b2 {
+  bottom: -20%; left: -16%; width: 460px; height: 460px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent-2) 18%, transparent) 0%, transparent 72%);
+}
+:root[data-theme="light"] .bg-decor .b1 {
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 16%, transparent) 0%, transparent 72%);
+}
+:root[data-theme="light"] .bg-decor .b2 {
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent-2) 13%, transparent) 0%, transparent 72%);
+}
+
+/* Sections */
+section { padding: 4.5rem 0; border-bottom: 1px solid var(--line); }
+section:last-of-type { border-bottom: none; }
+.section-inner { max-width: 700px; }
+
+/* Footer */
+footer { padding: 2rem 1.5rem 3rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--ink-soft); text-align: center; }
+footer .wrap { border-top: 1px solid var(--line); padding-top: 1.5rem; }
+
+/* Responsive */
+@media (max-width: 820px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .navbar-links { gap: 1.1rem; }
+}

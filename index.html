@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lídia Roche — Portfolio DAW</title>
+<meta name="description" content="Portfolio de Lídia Roche, estudiante de 2º curso del CFGS de Desarrollo de Aplicaciones Web.">
+
+<!-- Open Graph (vista previa al compartir el enlace) -->
+<meta property="og:title" content="Lídia Roche — Portfolio DAW">
+<meta property="og:description" content="Portfolio de Lídia Roche, estudiante de 2º curso del CFGS de Desarrollo de Aplicaciones Web.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div class="bg-decor" aria-hidden="true"><span class="b1"></span><span class="b2"></span></div>
+
+<nav class="navbar" aria-label="Navegación">
+  <div class="navbar-brand">
+    <div class="avatar-sm">LR</div>
+    <span>Lídia Roche</span>
+  </div>
+  <div class="navbar-links" id="navLinks">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#competencies">Competencias</a>
+    <a href="#projectes">Proyectos</a>
+    <a href="#contacte">Contacto</a>
+  </div>
+  <div class="navbar-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar el tema">◐</button>
+  </div>
+</nav>
+
+<header class="hero" id="inici">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-tag hero-reveal">// desarrolladora web en formación</div>
+      <h1 class="name hero-reveal">Lídia Roche</h1>
+      <p class="role hero-reveal">2º curso del CFGS de Desarrollo de Aplicaciones Web. Ocho años coordinando equipos, ahora aplicados a construir sistemas.</p>
+      <div class="hero-cta hero-reveal delay">
+        <a class="btn btn-primary" href="#projectes">Ver proyectos</a>
+        <a class="btn btn-secondary" href="#contacte">Contáctame</a>
+      </div>
+    </div>
+    <div class="code-card hero-reveal delay">
+      <div class="code-card-bar"><span></span><span></span><span></span></div>
+      <pre><span class="kw">const</span> lidia = {
+  <span class="key">rol</span>: <span class="str">"Desarrolladora web en formación"</span>,
+  <span class="key">experiencia_previa</span>: <span class="str">"8 años coordinando equipos"</span>,
+  <span class="key">intereses</span>: [<span class="str">"backend"</span>, <span class="str">"apis"</span>, <span class="str">"bases de dades"</span>],
+  <span class="key">aprendiendo_ahora</span>: <span class="str">"FastAPI"</span>,
+  <span class="key">en_crecimiento</span>: <span class="kw">true</span>
+};</pre>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section id="sobre-mi">
+      <div class="section-inner reveal">
+        <h2>Sobre mí</h2>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="assets/img/foto-lidia.jpg" alt="Retrato de Lídia Roche">
+          </div>
+          <div>
+            <p>Desde hace ocho años me dedico a coordinar equipos: gestiono la convivencia, resuelvo conflictos, organizo horarios y sostengo el día a día de niños, familias y compañeros en la Escola Pia de Sitges, donde actualmente combino tareas de vetlladora con la coordinación del servicio de comedor, el patio de ESO y la dirección de campamentos de verano. Es un trabajo que exige orden, criterio y capacidad de reacción constante — cualidades que ahora aplico a un ámbito nuevo.</p>
+            <p>Decidí empezar el CFGS de Desarrollo de Aplicaciones Web porque quería entender y construir los sistemas que hasta ahora solo usaba. Me interesa especialmente la parte de servidor y bases de datos — el "cómo funciona por dentro" — aunque no descarto el desarrollo de interfaces, y disfruto igualmente de cualquier reto de programación. Aplico la misma disciplina de organizar personas a organizar código: entender el problema antes de escribir la solución.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="competencies">
+      <div class="section-inner reveal">
+        <h2>Competencias y habilidades</h2>
+
+        <p class="subhead">competencias sociales y personales</p>
+        <ul class="comp-list">
+          <li><span class="comp-title">Liderazgo y coordinación de equipos</span><span class="comp-desc">Ocho años coordinando equipos de personas en entorno educativo y de tiempo libre.</span></li>
+          <li><span class="comp-title">Resolución de conflictos</span><span class="comp-desc">Gestión diaria de situaciones entre niños, familias y equipo.</span></li>
+          <li><span class="comp-title">Comunicación</span><span class="comp-desc">Interlocución constante con familias, niños y compañeros de trabajo.</span></li>
+          <li><span class="comp-title">Organización y planificación</span><span class="comp-desc">Programación de horarios, turnos y actividades de campamento y comedor.</span></li>
+          <li><span class="comp-title">Trabajo en equipo</span><span class="comp-desc">Coordinación con otros profesionales para un objetivo común.</span></li>
+          <li><span class="comp-title">Capacidad de adaptación</span><span class="comp-desc">Cambio de sector profesional hacia el desarrollo web.</span></li>
+          <li><span class="comp-title">Responsabilidad</span><span class="comp-desc">Dirección de campamentos de verano con niños a cargo.</span></li>
+          <li><span class="comp-title">Aprendizaje autónomo</span><span class="comp-desc">Estudio de nuevas tecnologías fuera del aula, por mi cuenta.</span></li>
+          <li><span class="comp-title">Empatía</span><span class="comp-desc">Escucha activa con niños, familias y equipo de trabajo.</span></li>
+          <li><span class="comp-title">Atención al detalle</span><span class="comp-desc">Rigor en la gestión de la información y las tareas diarias.</span></li>
+        </ul>
+
+        <p class="subhead">habilidades técnicas (en desarrollo)</p>
+        <div class="pill-grid">
+          <span class="pill">HTML5 &amp; CSS3</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">PHP</span>
+          <span class="pill">Python</span>
+          <span class="pill">FastAPI / APIs REST</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">React</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">MongoDB</span>
+          <span class="pill">Bootstrap</span>
+          <span class="pill">Git &amp; GitHub</span>
+        </div>
+        <p class="placeholder-note">Nivel orientativo según mi progreso actual en el ciclo — actualízalo a medida que avances.</p>
+      </div>
+    </section>
+
+    <section id="projectes">
+      <div class="section-inner reveal">
+        <h2>Proyectos</h2>
+        <p>Algunos de los proyectos en los que estoy trabajando durante el ciclo. Puedes ver el código completo en mi <a href="https://github.com/lroched-arch" target="_blank" rel="noopener">GitHub</a>.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-card reveal">
+          <h3>API con FastAPI</h3>
+          <p>Sustituye este texto por una descripción breve del proyecto: qué hace, qué problema resuelve.</p>
+          <div class="tags">python · fastapi · rest-api</div>
+        </div>
+        <div class="project-card reveal">
+          <h3>Aplicación web con React</h3>
+          <p>Sustituye este texto por una descripción breve del proyecto y el enlace al repositorio.</p>
+          <div class="tags">javascript · react · css</div>
+        </div>
+        <div class="project-card reveal">
+          <h3>Gestión de datos con PostgreSQL</h3>
+          <p>Sustituye este texto por una descripción breve del proyecto y el enlace al repositorio.</p>
+          <div class="tags">postgresql · sql · backend</div>
+        </div>
+      </div>
+      <p class="placeholder-note">Estas tres tarjetas son de ejemplo — cambia los títulos, descripciones y enlaces por tus proyectos reales.</p>
+    </section>
+
+    <section id="contacte">
+      <div class="section-inner reveal">
+        <h2>Contacto</h2>
+        <p>¿Estás trabajando o quieres hablar sobre algún proyecto? Escríbeme o encuéntrame en GitHub.</p>
+        <div class="contact-links">
+          <a href="mailto:lidiarochedw@gmail.com">lidiarochedw@gmail.com</a>
+          <a href="https://github.com/lroched-arch" target="_blank" rel="noopener">github.com/lroched-arch</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Lídia Roche — Portfolio del CFGS Desarrollo de Aplicaciones Web</div>
+</footer>
+
+<script src="js/nav.js" defer></script>
+<script src="js/reveal.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

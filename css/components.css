@@ -1,0 +1,140 @@
+/* components.css — botones, tarjetas, chips de habilidades, panel de código, avatar, toggle */
+
+.avatar-sm {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: var(--avatar-bg); color: var(--avatar-ink);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.theme-toggle {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+.theme-toggle:hover { border-color: var(--accent); }
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.75rem 1.3rem;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn:hover { text-decoration: none; }
+.btn-primary { background: var(--accent); color: #ffffff; }
+.btn-primary:hover { opacity: 0.9; }
+.btn-secondary { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Code card (panel de código del hero) */
+.code-card {
+  position: relative;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px var(--shadow);
+  overflow: hidden;
+}
+.code-card-bar {
+  display: flex; gap: 6px;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+.code-card-bar span { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.code-card pre {
+  margin: 0;
+  padding: 1.2rem 1.3rem 1.4rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.83rem;
+  line-height: 1.7;
+  overflow-x: auto;
+  color: var(--ink-soft);
+}
+.code-card .key { color: var(--accent-2); }
+.code-card .str { color: var(--accent); }
+.code-card .kw { color: var(--ink); }
+
+/* Tarjetas de competencias (con desplegable al hover) */
+.comp-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.7rem; }
+.comp-list li {
+  padding: 1.1rem 1.1rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 3px 12px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, padding 0.2s ease;
+}
+.comp-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px var(--shadow);
+  padding-bottom: 1.1rem;
+}
+.comp-title {
+  display: block;
+  font-weight: 600;
+  font-size: 1.02rem;
+  transition: color 0.2s ease;
+}
+.comp-list li:hover .comp-title { color: var(--accent); }
+.comp-desc {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease 0.05s, margin-top 0.4s ease;
+}
+.comp-list li:hover .comp-desc {
+  max-height: 4rem;
+  opacity: 1;
+  margin-top: 0.4rem;
+}
+
+/* Chips de habilidades técnicas */
+.pill-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
+.pill {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.87rem;
+  font-family: 'IBM Plex Mono', monospace;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.pill:hover { transform: translateY(-2px); box-shadow: 0 6px 16px var(--shadow); }
+
+/* Tarjetas de proyecto */
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.1rem; margin-top: 1rem; }
+.project-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 1.3rem 1.4rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.project-card:nth-child(2) { border-top-color: var(--accent-2); }
+.project-card:nth-child(3) { border-top-color: var(--accent); }
+.project-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px var(--shadow); }
+.project-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+.project-card p { font-size: 0.92rem; color: var(--ink-soft); margin: 0 0 0.7rem; max-width: none; }
+.project-card .tags { font-family: 'IBM Plex Mono', monospace; font-size: 0.76rem; color: var(--accent-2); }
+
+.placeholder-note { font-size: 0.82rem; color: var(--ink-soft); font-style: italic; margin-top: 1.3rem; }
+
+.contact-links { display: flex; flex-direction: column; gap: 0.85rem; margin-top: 1.2rem; }
+.contact-links a { font-size: 1.05rem; font-family: 'Space Grotesk', sans-serif; }
