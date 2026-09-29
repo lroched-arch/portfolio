@@ -51,7 +51,7 @@
   padding: 0.7rem 0.9rem;
   border-bottom: 1px solid var(--line);
 }
-.code-card-bar span { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.code-card-bar span { width: 12px; height: 10px; border-radius: 50%; background: var(--line); }
 .code-card pre {
   margin: 0;
   padding: 1.2rem 1.3rem 1.4rem;

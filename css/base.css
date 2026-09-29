@@ -32,6 +32,7 @@
 * { box-sizing: border-box; }
 
 html {
+  font-size: 108%;
   scroll-behavior: smooth;
   scroll-padding-top: calc(84px + env(safe-area-inset-top, 0px));
 }
