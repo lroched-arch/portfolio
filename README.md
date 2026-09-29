@@ -56,7 +56,7 @@ Actualmente en formación — Finalización prevista: **junio de 2027**
 ## 🔗 Contacto y perfiles
 
 * 💻 GitHub: [github.com/lidiarochedw](https://github.com/lidiarochedw)
-* 🌐 Portfolio: próximamente
+* 💻 Linkefdin: (www.linkedin.com/in/lídiarochedw)
 
 ---
 
